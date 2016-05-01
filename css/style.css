@@ -56,7 +56,6 @@ p {
 .button-orange,
 .button-blue {
     display: block;
-    vertical-align: middle;
     color: #612316;
     text-decoration: none;
     margin: 0 auto;
@@ -74,6 +73,10 @@ p {
     text-decoration: none;
 }
 
+.button:active {
+    background: #b33c22;
+}
+
 .button-orange {
     background: #dd4b2b;
 }
@@ -82,6 +85,10 @@ p {
     background: #4b4e73;
     color: #fff;
     text-decoration: none;
+}
+
+.button-orange:active {
+    background: #32344d;
 }
 
 .button-orange:visited {
@@ -96,6 +103,10 @@ p {
     background: #dd4b2b;
     color: #fff;
     text-decoration: none;
+}
+
+.button-blue:active {
+    background: #b33c22;
 }
 
 .button-blue:visited {
@@ -127,13 +138,13 @@ p {
 */
 
 .header-main {
-    padding: 50px 0 50px 0;
+    padding: 36px 0;
 }
 
 .logo-wrapper {
     padding-left: 15px;
     float: left;
-    max-width: 170px;
+    max-width: 175px;
 }
 
 .logo b {
@@ -146,11 +157,10 @@ p {
 
 .logo span {
     font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 16px;
     color: #dd4b2b;
-    margin: 0 0 0 10px;
 }
 
 a.logo:hover {
@@ -172,12 +182,15 @@ a.logo:visited {
 
 .navigation li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .navigation a,
 .navigation-slide a {
     display: block;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
     color: #31353e;
     padding: 10px 23px;
     border-radius: 30px;
@@ -187,6 +200,11 @@ a.logo:visited {
 .navigation-slide a:hover {
     background: #dd4b2b;
     color: #edeff1;
+}
+
+.navigation a:active,
+.navigation-slide a:active {
+    background: #b33c22;
 }
 
 .hamburger {
@@ -231,14 +249,10 @@ i.fa-bars:hover {
     margin: 0 0 120px 0;
 }
 
-.promo-title h1 {
-    margin-bottom: 20px;
-}
-
 .promo-title p {
     font-size: 30px;
     line-height: 48px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -311,22 +325,22 @@ input {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.3;
+    background: rgba(255, 255, 255, 0.3);
     outline: none;
     border-radius: 30px;
     box-shadow: none;
     border: none;
-    padding: 15px 70px 15px 35px;
+    padding: 10px 70px 10px 35px;
     width: 65%;
     display: block;
     margin-left: 40px;
-    color: #000;
+    color: #f3f4f6;
 }
 
-input.subscribe::-webkit-input-placeholder {color: #000; opacity: 1;}
-input.subscribe::-moz-placeholder          {color: #000; opacity: 1;}
-input.subscribe::-moz-placeholder           {color: #000; opacity: 1;}
-input.subscribe::-ms-input-placeholder      {color: #000; opacity: 1;}
+input.subscribe::-webkit-input-placeholder {color: #f3f4f6;}
+input.subscribe::-moz-placeholder          {color: #f3f4f6;}
+input.subscribe::-moz-placeholder           {color: #f3f4f6;}
+input.subscribe::-ms-input-placeholder      {color: #f3f4f6;}
 
 button.subscribe-btn {
     position: absolute;
@@ -335,9 +349,11 @@ button.subscribe-btn {
     border-radius: 30px;
     border: none;
     background: #fff;
-    color: #000;
+    color: #612316;
+    font-size: 18px;
+    font-weight: 400;
     outline: none;
-    padding: 15px 35px;
+    padding: 10px 35px;
     width: 35%;
     display: block;
 }
@@ -347,16 +363,24 @@ button.subscribe-btn:hover {
     color: #fff;
 }
 
+button.subscribe-btn:active {
+    background: #b33c22;
+}
+
 .descr {
     background: #fff;
     padding: 65px 0 87px 0;
 }
 
 .descr h2 {
+    font-size: 30px;
+    line-height: 48px;
     margin-bottom: 20px;
 }
 
 .descr p {
+    font-size: 16px;
+    line-height: 30px;
     margin-bottom: 40px;
 }
 
@@ -376,6 +400,10 @@ button.subscribe-btn:hover {
     padding-bottom: 70px;
 }
 
+.info p {
+    font-size: 18px;
+    line-height: 36px;
+}
 
 /*
 ------------------------------------
@@ -395,7 +423,7 @@ button.subscribe-btn:hover {
 
 i.fa-angle-left,
 i.fa-angle-right {
-    margin-top: 25px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
@@ -405,7 +433,7 @@ i.fa-angle-right {
 }
 
 .carousel-inner {
-    width: 120px;
+    width: 150px;
     min-height: 300px;
     text-align: center;
 }
@@ -415,6 +443,9 @@ i.fa-angle-right {
     padding-bottom: 50px;
 }
 
+.active {
+    padding-bottom: 0;
+}
 
 /*
 ------------------------------------
@@ -427,4 +458,15 @@ i.fa-angle-right {
     color: #fff;
     padding-top: 85px;
     padding-bottom: 200px;
+}
+
+.footer-main p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-main a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 }

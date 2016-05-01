@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 950px) {
     .header-main {
         padding: 10px 0 10px 0;
     }
@@ -52,7 +52,7 @@
     }
 }
 
-@media (min-width: 881px) {
+@media (min-width: 951px) {
     .hamburger {
         display: none;
     }
@@ -88,11 +88,11 @@
 
 @media (max-width: 460px) {
     .promo {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     .promo-item-wrapper {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     .news {
@@ -109,7 +109,8 @@
     }
 
     .info {
-        padding-bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
 }
 
@@ -123,5 +124,19 @@
 @media (min-width: 768px) {
     .container {
         width: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    button.subscribe-btn {
+        padding: 10px 15px;
+    }
+
+    .promo-item {
+        margin-bottom: 30px;
+    }
+
+    .promo-item:last-child {
+        margin-bottom: none;
     }
 }
