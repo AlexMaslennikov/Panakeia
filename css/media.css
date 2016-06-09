@@ -4,51 +4,9 @@
 ------------------------------------
 */
 
-@media (max-width: 768px) {
-    .promo {
-        padding-top: 200px;
-    }
-}
-
-@media (max-width: 950px) {
-    .header-main {
-        padding: 10px 0 10px 0;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navigation-slide {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background: #fff;
-        width: 100%;
-        margin: 0;
-        padding: 0 0 10px 0;
-    }
-
-    .navigation-slide ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .navigation-slide li {
-        display: block;
-        text-align: center;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .navigation-visible {
-        display: block;
-        animation: bounce 0.6s;
+@media (min-width: 768px) {
+    .container {
+        width: auto;
     }
 }
 
@@ -56,33 +14,44 @@
     .hamburger {
         display: none;
     }
-
     .navigation-slide {
         display: none;
     }
-
     .navigation-slide li {
         display: none;
     }
-
     .navigation-visible {
         display: none;
     }
 }
 
-@media (max-width: 990px) {
-    .descr {
-        text-align: center;
+@media (min-width: 991px) {
+    .products h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
-    
-    .descr .button-orange,
-    .descr .button-blue,
-    .news .button {
+    .products p {
+        margin-bottom: 0;
+    }
+    .products .button-orange,
+    .products .button-blue {
+        margin-top: 30px;
+        float: left;
+    }
+    .info {
+        min-height: 405px;
+    }
+}
+
+@media (max-width: 420px) {
+    button.subscribe-btn {
+        padding: 10px 15px;
+    }
+    .promo-item {
         margin-bottom: 30px;
     }
-
-    .news {
-        padding-bottom: 20px;
+    .promo-item:last-child {
+        margin-bottom: none;
     }
 }
 
@@ -90,27 +59,28 @@
     .promo {
         padding-bottom: 70px;
     }
-
     .promo-item-wrapper {
         margin-bottom: 0;
     }
-
     .news {
         padding-bottom: 0;
     }
-
     .newsletter {
         padding-top: 70px;
         padding-bottom: 80px;
     }
-
-    .descr {
+    .products {
         padding-bottom: 0;
     }
-
     .info {
-        padding-top: 50px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 200px;
     }
 }
 
@@ -121,22 +91,58 @@
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: auto;
+@media (max-width: 950px) {
+    .header-main {
+        padding: 10px 0 10px 0;
+    }
+    .navigation {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navigation-slide {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #edeff1;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
+    .navigation-slide ul {
+        padding: 0;
+        margin: 0;
+    }
+    .navigation-slide li {
+        display: block;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .navigation-visible {
+        display: block;
+        animation: bounce 0.6s;
     }
 }
 
-@media (max-width: 420px) {
-    button.subscribe-btn {
-        padding: 10px 15px;
+@media (max-width: 991px) {
+    .products {
+        text-align: center;
     }
-
-    .promo-item {
+    .products h2 {
+        margin-bottom: 20px;
+    }
+    .products p {
+        margin-bottom: 40px;
+    }
+    .products .button-orange,
+    .products .button-blue,
+    .news .button {
         margin-bottom: 30px;
     }
-
-    .promo-item:last-child {
-        margin-bottom: none;
+    .news {
+        padding-bottom: 20px;
     }
 }

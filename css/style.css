@@ -9,15 +9,15 @@
 body {
     font-family: 'Roboto Slab', Georgia, serif;
     font-size: 16px;
-    line-height: 30px;
     font-weight: 300;
-    color: #31353e;
     font-style: normal;
+    line-height: 30px;
+    color: #31353e;
 }
 
 .container {
-    max-width: 1200px;
     min-width: 400px;
+    max-width: 1200px;
 }
 
 h1,
@@ -41,7 +41,6 @@ h3 {
 p {
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
     margin: 0;
 }
 
@@ -55,22 +54,23 @@ p {
 .button,
 .button-orange,
 .button-blue {
+    font-family: 'Roboto Slab';
     display: block;
-    color: #612316;
-    text-decoration: none;
+    max-width: 213px;
     margin: 0 auto;
     padding: 10px 60px;
-    background: #fff;
+    text-decoration: none !important;
+    color: #612316;
     border-radius: 30px;
-    max-width: 213px;
+    background: #fff;
 }
 
 .button:hover,
 .button-orange,
 .button-blue {
+    text-decoration: none;
     color: #fff;
     background: #dd4b2b;
-    text-decoration: none;
 }
 
 .button:active {
@@ -82,9 +82,9 @@ p {
 }
 
 .button-orange:hover {
-    background: #4b4e73;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    background: #4b4e73;
 }
 
 .button-orange:active {
@@ -100,9 +100,9 @@ p {
 }
 
 .button-blue:hover {
-    background: #dd4b2b;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    background: #dd4b2b;
 }
 
 .button-blue:active {
@@ -123,7 +123,7 @@ p {
 .clearfix:before,
 .clearfix:after {
     display: table;
-    content: "";
+    content: '';
 }
 
 .clearfix:after {
@@ -139,26 +139,26 @@ p {
 
 .header-main {
     padding: 36px 0;
+    background: #edeff1;
 }
 
 .logo-wrapper {
-    padding-left: 15px;
     float: left;
     max-width: 175px;
 }
 
 .logo b {
     font-family: 'Roboto Slab', serif;
-    font-weight: 700;
     font-size: 36px;
+    font-weight: 700;
     line-height: 36px;
     color: #31353e;
 }
 
 .logo span {
     font-family: 'Roboto Slab', serif;
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 16px;
     color: #dd4b2b;
 }
@@ -187,19 +187,19 @@ a.logo:visited {
 
 .navigation a,
 .navigation-slide a {
-    display: block;
-    text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    color: #31353e;
+    display: block;
     padding: 10px 23px;
+    text-decoration: none;
+    color: #31353e;
     border-radius: 30px;
 }
 
 .navigation a:hover,
 .navigation-slide a:hover {
-    background: #dd4b2b;
     color: #edeff1;
+    background: #dd4b2b;
 }
 
 .navigation a:active,
@@ -212,17 +212,17 @@ a.logo:visited {
 }
 
 .hamburger a {
-    margin-top: 20px;
-    width: 35px;
     display: block;
+    width: 35px;
     height: 35px;
+    margin-top: 20px;
 }
 
 i.fa-bars {
+    font-size: 20px;
     margin: 0;
     padding-left: 10px;
     color: #000;
-    font-size: 20px;
 }
 
 i.fa-bars:hover {
@@ -237,11 +237,11 @@ i.fa-bars:hover {
 */
 
 .promo {
-    color: #fff;
-    background: url("../img/promo-bg.jpg") no-repeat top #260f00;
-    background-size: cover;
-    padding-top: 485px;
+    padding-top: 470px;
     padding-bottom: 140px;
+    color: #fff;
+    background: url('../img/promo-bg.jpg') no-repeat top #260f00;
+    background-size: cover;
     text-shadow: 0 1px 1px #000;
 }
 
@@ -251,8 +251,8 @@ i.fa-bars:hover {
 
 .promo-title p {
     font-size: 30px;
-    line-height: 48px;
     font-weight: 400;
+    line-height: 48px;
     margin: 0;
 }
 
@@ -261,8 +261,8 @@ i.fa-bars:hover {
 }
 
 .promo-item {
-    min-height: 338px;
     overflow: hidden;
+    min-height: 338px;
     padding: 0 30px 0 30px;
 }
 
@@ -274,11 +274,15 @@ i.fa-bars:hover {
     margin-bottom: 20px;
 }
 
+.promo-item p {
+    font-family: 'Roboto';
+}
+
 .news {
-    background: #edeff1;
     min-height: 786px;
     padding-top: 80px;
     padding-bottom: 103px;
+    background: #edeff1;
 }
 
 .news h2 {
@@ -299,15 +303,28 @@ i.fa-bars:hover {
     margin-bottom: 36px;
 }
 
-.newsletter {
-    background: #edeff1 url("../img/newsletter-bg.jpg") no-repeat center;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    min-height: 382px;
+.news .button {
+    font-family: 'Roboto';
+    font-size: 15px;
+    max-width: 180px;
+    padding: 10px 30px;
+    color: #000;
+}
+
+.news .button:hover {
     color: #fff;
 }
 
+.newsletter {
+    min-height: 382px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    color: #fff;
+    background: #edeff1 url('../img/newsletter-bg.jpg') no-repeat center;
+}
+
 .newsletter h2 {
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -315,95 +332,110 @@ i.fa-bars:hover {
     margin-bottom: 43px;
 }
 
-form {
+.form-group {
     position: relative;
-    margin: 0 auto;
     max-width: 510px;
+    margin: 0 auto;
 }
 
 input {
     position: absolute;
-    left: 0;
     top: 0;
-    background: rgba(255, 255, 255, 0.3);
-    outline: none;
-    border-radius: 30px;
-    box-shadow: none;
-    border: none;
-    padding: 10px 70px 10px 35px;
-    width: 65%;
+    left: 0;
     display: block;
+    width: 65%;
     margin-left: 40px;
+    padding: 10px 70px 10px 35px;
+    color: #f3f4f6;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: none;
+}
+
+input.subscribe::-webkit-input-placeholder {
     color: #f3f4f6;
 }
 
-input.subscribe::-webkit-input-placeholder {color: #f3f4f6;}
-input.subscribe::-moz-placeholder          {color: #f3f4f6;}
-input.subscribe::-moz-placeholder           {color: #f3f4f6;}
-input.subscribe::-ms-input-placeholder      {color: #f3f4f6;}
+input.subscribe::-moz-placeholder {
+    color: #f3f4f6;
+}
+
+input.subscribe::-moz-placeholder {
+    color: #f3f4f6;
+}
+
+input.subscribe::-ms-input-placeholder {
+    color: #f3f4f6;
+}
 
 button.subscribe-btn {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    border-radius: 30px;
-    border: none;
-    background: #fff;
-    color: #612316;
     font-size: 18px;
     font-weight: 400;
-    outline: none;
-    padding: 10px 35px;
-    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 20px;
     display: block;
+    width: 35%;
+    padding: 10px 35px;
+    color: #612316;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #fff;
 }
 
 button.subscribe-btn:hover {
-    background: #dd4b2b;
     color: #fff;
+    background: #dd4b2b;
 }
 
 button.subscribe-btn:active {
     background: #b33c22;
 }
 
-.descr {
-    background: #fff;
+.products {
     padding: 65px 0 87px 0;
+    background: #fff;
 }
 
-.descr h2 {
+.products h2 {
     font-size: 30px;
     line-height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.descr p {
+.products p {
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
-.descr-top {
-    margin-bottom: 52px;
-}
-
-.descr img {
+.products img {
     max-width: 100%;
     margin-bottom: 50px;
 }
 
 .info {
-    background: #d75d0e;
-    color: #fff;
     padding-top: 90px;
     padding-bottom: 70px;
+    color: #fff;
+    background: #d75d0e;
 }
 
 .info p {
+    font-family: 'Roboto';
     font-size: 18px;
     line-height: 36px;
 }
+
+.info-item {
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 /*
 ------------------------------------
@@ -412,8 +444,10 @@ button.subscribe-btn:active {
 */
 
 .carousel-inner {
-    width: 200px;
+    width: 120px;
+    height: 300px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .carousel-control.left,
@@ -423,19 +457,13 @@ button.subscribe-btn:active {
 
 i.fa-angle-left,
 i.fa-angle-right {
-    margin-top: 30px;
     font-size: 30px;
+    margin-top: 30px;
 }
 
 .carousel-control {
     top: 65px;
-    height: 300px;
-}
-
-.carousel-inner {
-    width: 150px;
-    min-height: 300px;
-    text-align: center;
+    height: 100px;
 }
 
 .item {
@@ -447,6 +475,7 @@ i.fa-angle-right {
     padding-bottom: 0;
 }
 
+
 /*
 ------------------------------------
             Footer
@@ -454,19 +483,20 @@ i.fa-angle-right {
 */
 
 .footer-main {
-    background: url("../img/newsletter-bg.jpg") no-repeat center;
-    color: #fff;
     padding-top: 85px;
     padding-bottom: 200px;
+    color: #fff;
+    background: url('../img/newsletter-bg.jpg') no-repeat center;
 }
 
 .footer-main p {
+    font-family: 'Roboto';
     font-size: 18px;
     line-height: 24px;
 }
 
 .footer-main a {
-    color: #fff;
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
+    color: #fff;
 }
